@@ -1,0 +1,14 @@
+﻿<Application
+    x:Class="Classic.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Classic.UWP"
+    xmlns:converter="using:Classic.UWP.Converters"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <ResourceDictionary>
+            <converter:BooleanToVisibilityConverter x:Key="BooleanToVisibility"></converter:BooleanToVisibilityConverter>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
