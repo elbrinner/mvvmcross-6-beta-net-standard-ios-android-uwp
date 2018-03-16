@@ -74,6 +74,17 @@
     <Content Include="Entitlements.plist" />
     <None Include="packages.config" />
     <InterfaceDefinition Include="Views\HomeView.xib" />
+    <InterfaceDefinition Include="Views\Cell\CustomCell.xib" />
+    <Compile Include="Views\Cell\CustomCell.cs" />
+    <Compile Include="Views\Cell\CustomCell.designer.cs">
+      <DependentUpon>CustomCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\SimpleDynamicTableViewSource.cs" />
+    <InterfaceDefinition Include="Views\AboutView.xib" />
+    <Compile Include="Views\AboutView.cs" />
+    <Compile Include="Views\AboutView.designer.cs">
+      <DependentUpon>AboutView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ModernHttpClient, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -95,6 +106,10 @@
       <Project>{6828ef4e-f849-4561-9783-678cfb84c213}</Project>
       <Name>Classic.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Cell\" />
+    <Folder Include="DataSource\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
