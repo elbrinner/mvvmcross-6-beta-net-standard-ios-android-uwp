@@ -155,7 +155,7 @@ Código de ejemplo de la charla del día 21/03/2018
 
 
 <p><a href="">[Json del servicio]</a></p>
-<p><a href="">[Código BaseResponse]</a></p>
+<p><a href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/Models/Base/BaseResponse.cs" target="_black">[Código BaseResponse]</a></p>
 <p><a href="">[Código MoviResponse]</a></p>
 <p><a href="">[Código ResultMovie]</a></p>
 
