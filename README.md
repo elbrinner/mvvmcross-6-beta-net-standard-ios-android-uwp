@@ -22,7 +22,7 @@ Código de ejemplo de la charla del día 21/03/2018
 <p>Elegimos la opción “Otros tipos de proyectos”, y creamos un proyecto solución en blanco. </p>
 
 
-<img src="/Img/1.png"/> 
+<img src="/Img/1.PNG"/> 
 
 <h2>Paso 2: Agregar los proyectos para las plataformas y uno para el Core</h2>
 
@@ -44,34 +44,34 @@ Código de ejemplo de la charla del día 21/03/2018
 <h3>Agregando el proyecto de Core:</h3>
 
 
-<img src="/Img/3.png"/> 
+<img src="/Img/3.PNG"/> 
 
 <h3>Agregando el proyecto de IOS:</h3>
 
-<img src="/Img/4.png"/> 
+<img src="/Img/4.PNG"/> 
 
 <h3>Agregando el proyecto de Android:</h3>
 
-<img src="/Img/5.png"/> 
+<img src="/Img/5.PNG"/> 
 
 <h3>Agregando el proyecto de UWP:</h3>
 
-<img src="/Img/6.png"/> 
+<img src="/Img/6.PNG"/> 
 
 
 <p>No todas las versiones de UWP son compatible con Net Standard, se debe tener como mínimo la versión “Fall Creators”.</p>
 
-<img src="/Img/7.png"/> 
+<img src="/Img/7.PNG"/> 
 <p>Se puede ver más detalles aquí: <a href="https://blogs.msdn.microsoft.com/dotnet/2017/10/10/announcing-uwp-support-for-net-standard-2-0/">enlace a microsoft</a></p>
 
 
 <p>Una vez creado todos los proyectos debemos agregar la referencia al proyecto de Core, para esto tenemos que seleccionar con el 2º botón sobre referencia, en el menú que se muestra elegir la opción “<strong>agregar referencia</strong>”, dentro de solución se debe seleccionar el proyecto <strong>Classic.Core</strong> y hacer clic en el botón <strong>aceptar</strong>.</p>
 
-<img src="/Img/8.png"/> 
+<img src="/Img/8.PNG"/> 
 
 <p>Debemos realizar la misma operación para Android y IOS. El resultado final debe ser similar a este:</p>
 
-<img src="/Img/9.png"/> 
+<img src="/Img/9.PNG"/> 
 
 <h2>Paso 3: Agregar MvvmCross 6.0.5 (beta)</h2>
 
@@ -79,16 +79,16 @@ Código de ejemplo de la charla del día 21/03/2018
 
 <p>Pero de cara a futuro, revise si el paquete MvvmCross.StarterPack se encuentra disponible para la versión 6. </p>
 
-<img src="/Img/10.png"/>
+<img src="/Img/10.PNG"/>
 
 <p>Para instalar MvvmCross debemos seleccionar la solución con el 2º botón y elegir la opción “administrar paquetes de nuget para la solución”, el siguiente paso es buscar por MvvmCross con la opción “incluir versión preliminar” habilitada. </p>
 
 
-<img src="/Img/11.png"/>
+<img src="/Img/11.PNG"/>
 
 <p>Una vez elegido la versión de MvvmCross 6.0.5, debemos indicar que queremos instalar en todos los proyectos de nuestra solución. El último paso es hacer clic en instalar. </p>
 
-<img src="/Img/12.png"/>
+<img src="/Img/12.PNG"/>
 
 <p>Aceptamos y toca esperar que finalice la instalación.</p>
 
@@ -129,13 +129,13 @@ Código de ejemplo de la charla del día 21/03/2018
 
 <p>El siguiente paso es instalar el paquete Newtosoft.Json en el proyecto Core que será el responsable de deserializar el json del servicio.</p>
 
-<img src="/Img/13.png"/>
+<img src="/Img/13.PNG"/>
 
 <p>El último paquete que vamos a instalar en el proyecto de Core, solo tiene sentido si vamos a dar soporte a versiones inferior a 5 de Android, sirve para trabajar con el httpClient nativo de cada plataforma mejorando los tiempos de respuesta. *Se puede hacer lo mismo configurando el httpClient desde el proyecto de plataforma.</p>
 
 <p>ModernhttpClient , se debe instalar en todos los proyectos. </p>
 
-<img src="/Img/14.png"/>
+<img src="/Img/14.PNG"/>
 
 
 <h3>Paso 4.2 : Agregar el archivo de configuración</h3>
