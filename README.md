@@ -315,14 +315,14 @@ En breve explicaré como usar.
 <img src="/Img/ImgHomeView.png"/> 
 <br></br>
 
-<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/Classic/Classic.IOS/Views/HomeView.cs">[Código aquí HomeView]</a></p>
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.IOS/Views/HomeView.cs">[Código aquí HomeView]</a></p>
 
 <p>Abrimos la clase AboutView.cs y escribimos el siguiente codigo</p>
 
 <img src="/Img/ImgAboutView.png"/> 
 <br></br>
 
-<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/Classic/Classic.IOS/Views/AboutView.cs">[Código aquí AboutView]</a></p>
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.IOS/Views/AboutView.cs">[Código aquí AboutView]</a></p>
 
 
 
