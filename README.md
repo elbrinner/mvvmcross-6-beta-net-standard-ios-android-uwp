@@ -310,6 +310,21 @@ En breve explicaré como usar.
 
 <h2>Paso 5: Implementación de MVVM en la vista</h2>
 
+<p>Creamos la tabla de manera dinamica para proveerle de datos</p>
+
+<img src="/Img/ImgTableViewSource.png"/> 
+<br></br>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.IOS/DataSource/SimpleDynamicTableViewSource.cs">[Código aquí HomeView]</a></p>
+
+<p>Creamos la celda que esta dentro de la tabla y que pintará los datos de cada uno de los objetos del array</p>
+
+<img src="/Img/ImgCustomView.png"/> 
+<br></br>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.IOS/Views/Cell/CustomCell.cs">[Código aquí HomeView]</a></p>
+
+
 <p>Abrimos la clase HomeView.cs y escribimos el siguiente codigo</p>
 
 <img src="/Img/ImgHomeView.png"/> 
@@ -323,17 +338,3 @@ En breve explicaré como usar.
 <br></br>
 
 <p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.IOS/Views/AboutView.cs">[Código aquí AboutView]</a></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
