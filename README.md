@@ -154,23 +154,26 @@ Código de ejemplo de la charla del día 21/03/2018
 <li>	MoviResponse y ResultMovie: El resultado de las últimas películas de la API. Para agilizar el proceso, copie la respuesta del JSON en esta página: http://json2csharp.com , ella genera todas las propiedades de forma automática. </li>
 
 
-<p><a target="_blank" href="">[Json del servicio]</a></p>
+<p><a target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Img/servicios.json">[Json del servicio]</a></p>
+
 <p><a target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/Models/Base/BaseResponse.cs" target="_black">[Código BaseResponse]</a></p>
-<p><a href="">[Código MoviResponse]</a></p>
-<p><a href="">[Código ResultMovie]</a></p>
+
+<p><a target="_blank"  href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/Models/Movie/MovieResponse.cs">[Código MoviResponse]</a></p>
+<p><a target="_blank"  href="https://github.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/blob/master/Classic/Classic.Core/Models/Movie/ResultMovie.cs">[Código ResultMovie]</a></p>
 
 <h3>Paso 4.4: Crear los Servicios</h3>
 
 <p>Vamos a crear una interface para registrar el conector httpclient de la forma más simples posible.</p>
 
-<p><a href="">[Código de la interfaz]</a></p>
-<p><a href="">[Código de la implementación]]</a></p>
+<p><a target="_blank"  href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/Services/Connectors/IWebClientService.cs">[Código de la interfaz]</a></p>
+
+<p><a target="_blank"  href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/Services/Connectors/WebClientService.cs">[Código de la implementación]]</a></p>
 
 
 <p>Creamos una nueva interfaz para agregar todos los servicios de la API de Themoviedb.</p>
 
-<p><a href="">[Código de la interfaz]</a></p>
-<p><a href="">[Código de la implementación]</a></p>
+<p><a  target="_blank"  href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/Services/WebServices/IMovieWebService.cs">[Código de la interfaz]</a></p>
+<p><a  target="_blank"  href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/Services/WebServices/MovieWebService.cs">[Código de la implementación]</a></p>
 
 
 
@@ -182,7 +185,7 @@ En breve explicaré como usar.
 <p>Dentro de la carpeta ViewModels => Base, vamos a crear el archivo BaseViewModel. Todas las propiedades comunes de los viewmodels van en este archivo.</p>
 
 
-<p><a href="">[Código aquí]</a></p>
+<p><a  target="_blank"  href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/ViewModels/Base/BaseViewModel.cs">[Código aquí]</a></p>
 
 <p>En BaseViewModel podemos destacar 3 elementos: </p>
 
@@ -196,14 +199,75 @@ En breve explicaré como usar.
 </ul>
 </li>
 </ul>
+
+
 <p>En la carpeta ViewModels, vamos agregar nuestra p&aacute;gina principal: HomeViewModel</p>
 <p>En este archivo podemos destacar:</p>
 <ul>
 <li>Herenda de BaseViewModel</li>
 <li>Al cargar la p&aacute;gina (ViewAppeared), se llama el servicio y el resultado se agrega en una propiedad publica que notifica la vista.</li>
 </ul>
-<p><a href="">[Código aquí]</a></p>
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/ViewModels/HomeViewModel.cs">[Código aquí]</a></p>
 <p>&nbsp;</p>
+
+<h3>Paso 4.6: Agregar el arranque de la aplicación</h3>
+
+<p>Debemos crear el archivo App.cs, este archivo es el responsable por arrancar la aplicación en el viewmodel indicado, aparte de registrar los servicios.</p>
+
+<p>Todos los servicios terminados por service, se registra de forma automática por MvvmCross. Este es el caso de nuestros 2 servicios (IWebClientService y IMovieWebService). </p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/App.cs">[Código aquí]</a></p>
+
+
+<h2>Paso 5: Configurar UWP</h2>
+
+<p>Lo primero que debemos crear es un archivo Setup.cs dentro del proyecto Classic.UWP</p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.UWP/Setup.cs">[Código aquí]</a></p>
+
+<p>Este archivo es el responsable por arrancar MvvmCross. </p>
+
+<p>El siguiente paso es eliminar el archivo MainPage.Xaml, debemos crear páginas que herende directamente de MvvmCross.</p>
+
+<p>El próximo para es una carpeta con el nombre de Views, agregaremos nuestras páginas en esta carpeta.</p>
+
+<p>Modificar el archivo App.xaml.cs, debemos agregar la configuración de MvvmCross para controla la navegación.</p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.UWP/App.xaml.cs">[Código aquí]</a></p>
+
+<p>Haga clic con el 2º botón sobre la carpeta Views, elija agregar nuevo elemento. Tenemos que crear una página vacía.</p>
+
+<img src="/Img/20.PNG"/>
+
+<p>Una vez creado debemos agregar modificar la herencia del fichero, las páginas que usan MvvmCross debe heredar de <strong>views:MvxWindowsPage</strong></p>
+
+<img src="/Img/21.PNG"/>
+
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.UWP/Views/HomeView.xaml">[Código aquí Xaml]</a></p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.UWP/Views/HomeView.xaml">[Código aquí Xaml]</a></p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.UWP/Views/HomeView.xaml">[Código aquí .CS]</a></p>
+
+<p>Para usar el cargando, debemos crear un converte que indique cuando mostrar o ocultar el <strong>ProgressBar</strong></p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.UWP/Converters/BooleanToVisibilityConverter.cs">[Código aquí .CS]</a></p>
+
+<p> El último paso será crear la vista AboutView, los pasos a seguir son los mismos que para la vista HomeView</p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.UWP/Views/AboutView.xaml">[Código aquí Xaml]</a></p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.UWP/Views/AboutView.xaml.cs">[Código aquí .CS]</a></p>
+
+
+<h2>Paso 5: Configurar Android</h2>
+
+
+
+
+
+
 
 
 
