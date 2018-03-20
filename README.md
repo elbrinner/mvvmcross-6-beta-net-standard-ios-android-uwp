@@ -267,7 +267,7 @@ En breve explicaré como usar.
 
 <p>Abrimos el AppDelegate, este es el punto de partida de la Aplicación en iOS, aqui controlamos el ciclo de vida de la Aplicación, el proposito es trabajar sin los famosos Storyboards y hacer una aplicacion mas escalable y con un mejor control del flujo</p>
 
-<img src="/Img/ImgAppDelegate"/> 
+<img src="/Img/ImgAppDelegate.png"/> 
 
 
 
