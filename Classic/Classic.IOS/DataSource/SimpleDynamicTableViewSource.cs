@@ -15,7 +15,7 @@ namespace Classic.IOS.DataSource
 
             tableView.Source = this;
             tableView.RowHeight = UITableView.AutomaticDimension;
-            tableView.EstimatedRowHeight = 60.0f;
+            tableView.EstimatedRowHeight = 70.0f;
             this.TableView.RegisterNibForCellReuse(UINib.FromName(this.CellType.Name, null), this.CellType.Name);
         }
 

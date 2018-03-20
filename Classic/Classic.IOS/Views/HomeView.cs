@@ -71,6 +71,7 @@ namespace Classic.IOS.Views
         private void SetDataSources()
         {
             this.dataSource = new SimpleDynamicTableViewSource(this.myTableView,typeof(CustomCell));
+            this.myTableView.LayoutIfNeeded();
         }
 
 

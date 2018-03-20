@@ -60,15 +60,6 @@ namespace Classic.IOS.Views
 		}
 
         private void Initilize(){
-            //if (this.NavigationController?.ViewControllers?.Length > 1)
-            //{
-            //    this.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem(
-            //        UIImage.FromFile("navbar_ico_back"), UIBarButtonItemStyle.Plain, (sender, args) => {
-            //            //((AboutViewModel)this.ViewModel).CloseCommand.Execute(null);
-            //            this.NavigationController.PopViewController(true);
-            //    }), true);
-            //}
-
             if (this.NavigationController != null && this.NavigationController.ViewControllers.Length > 1)
             {
                 this.NavigationController.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem(
