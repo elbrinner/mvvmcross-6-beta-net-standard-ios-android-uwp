@@ -284,6 +284,8 @@ En breve explicaré como usar.
 
 <p>En las imagenes vais a ver que se abre un proyecto de Classic.IOS, no se debe tocar nada de eso, solo y exclusivamente las vistas.</p>
 
+<img src="/Img/ImgSeleccionXCODE.png"/> 
+<br></br>
 <img src="/Img/ImgVistaMaster.png"/> 
 <br></br>
 <img src="/Img/ImgVistaDetalle.png"/> 
@@ -297,16 +299,30 @@ En breve explicaré como usar.
 <br></br>
 <img src="/Img/ImgInstanciaDos.png"/> 
 <br></br> 
-<p>Con el objeto seleccionado nos vamos a la paleta de Propiedades y seleccionamos la proiedad <b>"Name"</b>, alli creamos la conexión del objeto, en otras palabras es el <b>"IBOutlet"</b> nativo de iOS.</p>
+
+<p>Con el objeto seleccionado nos vamos a la paleta de Propiedades y seleccionamos la propiedad <b>"Name"</b>, alli creamos la conexión del objeto, en otras palabras es el <b>"IBOutlet"</b> nativo de iOS.</p>
 <br></br>
 <img src="/Img/ImgInstanciaCuatro.png"/> 
 <br></br>
+
 <p>Desplegamos el fichero .designer.cs que se ha creado con nuestra Vista controlador y observamos que de manera automatica se han creado los <b>"IBOutlets"</b></p>
-<br></br>
 <img src="/Img/ImgInstanciaCinco.png"/> 
 
+<h2>Paso 5: Implementación de MVVM en la vista</h2>
 
+<p>Abrimos la clase HomeView.cs y escribimos el siguiente codigo</p>
 
+<img src="/Img/ImgHomeView.png"/> 
+<br></br>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/Classic/Classic.IOS/Views/HomeView.cs">[Código aquí HomeView]</a></p>
+
+<p>Abrimos la clase AboutView.cs y escribimos el siguiente codigo</p>
+
+<img src="/Img/ImgAboutView.png"/> 
+<br></br>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/Classic/Classic.IOS/Views/AboutView.cs">[Código aquí AboutView]</a></p>
 
 
 
