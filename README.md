@@ -274,7 +274,7 @@ En breve explicaré como usar.
 <p>En este paso creamos dos vistas como patron de diseño Master - Detail, para poder realizar las vista controladores debemos crear seleccionar un nuevo archivo en la carpeta en donde estarán todas nuestras vistas(Views), en la seleccion de el tipo de interfaz que necesitamos buscamos una Vista controlador, esta clase nos creará tanto el .XIB como su relación, para más adelante poder tener acceso a las distintas instancias de los objetos declarados.</p>
 
 <img src="/Img/ImgNuevoArchivo.png"/> 
-
+<br></br>
 <img src="/Img/ImgSeleccionVC.png"/> 
 
 
@@ -282,12 +282,28 @@ En breve explicaré como usar.
 
 <p>En este paso tenemos que incorporar en la vista los objetos que posteriormente se encargarán de pintar lo que el Modelo de datos nos indique, en este paso es necesario abrir XCode, este IDE de Apple sólo nos servirá para colocar los objetos dentro de la vista y los "constrains" que permitirá que se ajusten a cualquier dispositivo de Apple.</p>
 
-<p>En las imagenes vais a ver que se abre un proyecto de Classic.IOS, no se debe tocar nada de eso, solo y exclusivamnete las vistas.</p>
+<p>En las imagenes vais a ver que se abre un proyecto de Classic.IOS, no se debe tocar nada de eso, solo y exclusivamente las vistas.</p>
 
 <img src="/Img/ImgVistaMaster.png"/> 
-
+<br></br>
 <img src="/Img/ImgVistaDetalle.png"/> 
 
+<h2>Paso 4: Creación de las instancias de los objetos con los que el controlador podrá de manera Reactiva informar a las subVistas que deben cambiar o modificarse</h2>
+
+<p>En este paso, debemos abrir ahora el .XIB en Visual Studio, y alli, observar el esquema de documento, seleccionamos el objeto al que le crearemos la instancia para poder trabajar con él</p>
+
+
+<img src="/Img/ImgInstanciaUno.png"/> 
+<br></br>
+<img src="/Img/ImgInstanciaDos.png"/> 
+<br></br> 
+<p>Con el objeto seleccionado nos vamos a la paleta de Propiedades y seleccionamos la proiedad <b>"Name"</b>, alli creamos la conexión del objeto, en otras palabras es el <b>"IBOutlet"</b> nativo de iOS.</p>
+<br></br>
+<img src="/Img/ImgInstanciaCuatro.png"/> 
+<br></br>
+<p>Desplegamos el fichero .designer.cs que se ha creado con nuestra Vista controlador y observamos que de manera automatica se han creado los <b>"IBOutlets"</b></p>
+<br></br>
+<img src="/Img/ImgInstanciaCinco.png"/> 
 
 
 
