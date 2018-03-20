@@ -97,7 +97,8 @@ Código de ejemplo de la charla del día 21/03/2018
 <h2>Paso 4: Configurar MvvmCross en Core</h2>
 
 
-
+<p>Antes de empezar a configurar debemos crear las siguientes carpetas dentro del proyecto Core:</p>
+<ul>
 <li>Constants</li>
 <li>Converters
 <ul>
@@ -140,10 +141,9 @@ Código de ejemplo de la charla del día 21/03/2018
 
 <h3>Paso 4.2 : Agregar el archivo de configuración</h3>
 
-<p>Dentro de la carpeta Constants, vamos a crear una clase con el siguiente nombre ConfigConstants. Usaremos este archivo para guardar la configuración de la aplicación, se puede ver el código aquí: </p
+<p>Dentro de la carpeta Constants, vamos a crear una clase con el siguiente nombre ConfigConstants. Usaremos este archivo para guardar la configuración de la aplicación, se puede ver el código aquí: </p>
 
-	>
-<p><a href="">[Código]</a></p>
+<p><a target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/Constants/ConfigConstants.cs">[Código]</a></p>
 
 <h3> 4.3: Crear los modelos</h3>
 
@@ -154,8 +154,8 @@ Código de ejemplo de la charla del día 21/03/2018
 <li>	MoviResponse y ResultMovie: El resultado de las últimas películas de la API. Para agilizar el proceso, copie la respuesta del JSON en esta página: http://json2csharp.com , ella genera todas las propiedades de forma automática. </li>
 
 
-<p><a href="">[Json del servicio]</a></p>
-<p><a href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/Models/Base/BaseResponse.cs" target="_black">[Código BaseResponse]</a></p>
+<p><a target="_blank" href="">[Json del servicio]</a></p>
+<p><a target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Core/Models/Base/BaseResponse.cs" target="_black">[Código BaseResponse]</a></p>
 <p><a href="">[Código MoviResponse]</a></p>
 <p><a href="">[Código ResultMovie]</a></p>
 
