@@ -265,7 +265,7 @@ En breve explicaré como usar.
 
 <h2>Paso 6: Configurar iOS</h2>
 
-<p>Abrimos el AppDelegate, este es el punto de partida de la Aplicación e iOS, aqui controlamos el ciclo de vida de la Aplicación, el proposito es trabajar sin los famosos Storyboards y hacer una aplicacion mas escalable y con un mejor control del flujo</p>
+<p>Abrimos el AppDelegate, este es el punto de partida de la Aplicación en iOS, aqui controlamos el ciclo de vida de la Aplicación, el proposito es trabajar sin los famosos Storyboards y hacer una aplicacion mas escalable y con un mejor control del flujo</p>
 
 <img src="/Img/ImgAppDelegate"/> 
 
