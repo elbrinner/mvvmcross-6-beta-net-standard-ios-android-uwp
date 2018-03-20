@@ -2,7 +2,9 @@
 using Classic.Core.ViewModels;
 using Foundation;
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Platform.Ios.Presenters.Attributes;
 using MvvmCross.Platform.Ios.Views;
+using MvvmCross.Presenters;
 using UIKit;
 
 namespace Classic.IOS.Views
@@ -43,9 +45,11 @@ namespace Classic.IOS.Views
         {
         }
 
+
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            this.Initilize();
             this.SetBindings();
         }
 
@@ -54,6 +58,29 @@ namespace Classic.IOS.Views
             base.ViewWillAppear(animated);
             this.Title = this.titleVC;
 		}
+
+        private void Initilize(){
+            //if (this.NavigationController?.ViewControllers?.Length > 1)
+            //{
+            //    this.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem(
+            //        UIImage.FromFile("navbar_ico_back"), UIBarButtonItemStyle.Plain, (sender, args) => {
+            //            //((AboutViewModel)this.ViewModel).CloseCommand.Execute(null);
+            //            this.NavigationController.PopViewController(true);
+            //    }), true);
+            //}
+
+            if (this.NavigationController != null && this.NavigationController.ViewControllers.Length > 1)
+            {
+                this.NavigationController.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem(
+                    UIImage.FromFile("navbar_ico_back"), UIBarButtonItemStyle.Plain, (sender, args) => {
+                        ((AboutViewModel)this.ViewModel).CloseCommand.Execute(null);
+                        Console.WriteLine("AQUI ENTRA");
+                }), false);
+
+            }else{
+                Console.WriteLine("AQUI NO ENTRA");
+            }
+        }
 
 
 
