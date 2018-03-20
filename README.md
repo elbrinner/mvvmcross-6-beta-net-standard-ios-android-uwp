@@ -269,6 +269,14 @@ En breve explicaré como usar.
 
 <img src="/Img/ImgAppDelegate.png"/> 
 
+<h2>Paso 2: Agregar las vistas que pintarán los datos segun el modelo de datos</h2>
+
+<p>En este paso creamos dos vistas como patron de diseño Master - Detail, para poder realizar las vista controladores debemos crear seleccionar un nuevo archivo en la carpeta en donde estarán todas nuestras vistas(Views), en la seleccion de el tipo de interfaz que necesitamos buscamos una Vista controlador, esta clase nos creará tanto el .XIB como su relación, para más adelante poder tener acceso a las distintas instancias de los objetos declarados.</p>
+
+<img src="/Img/ImgNuevoArchivo.png"/> 
+
+<img src="/Img/ImgSeleccionVC.png"/> 
+
 
 
 
