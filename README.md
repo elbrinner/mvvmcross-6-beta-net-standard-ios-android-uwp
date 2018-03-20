@@ -278,6 +278,17 @@ En breve explicaré como usar.
 <img src="/Img/ImgSeleccionVC.png"/> 
 
 
+<h2>Paso 3: Creación de los objetos en la Vista</h2>
+
+<p>En este paso tenemos que incorporar en la vista los objetos que posteriormente se encargarán de pintar lo que el Modelo de datos nos indique, en este paso es necesario abrir XCode, este IDE de Apple sólo nos servirá para colocar los objetos dentro de la vista y los "constrains" que permitirá que se ajusten a cualquier dispositivo de Apple.</p>
+
+<p>En las imagenes vais a ver que se abre un proyecto de Classic.IOS, no se debe tocar nada de eso, solo y exclusivamnete las vistas.</p>
+
+<img src="/Img/ImgVistaMaster.png"/> 
+
+<img src="/Img/ImgVistaDetalle.png"/> 
+
+
 
 
 
