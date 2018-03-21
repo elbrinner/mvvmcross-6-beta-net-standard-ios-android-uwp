@@ -263,6 +263,82 @@ En breve explicaré como usar.
 
 <h2>Paso 5: Configurar Android</h2>
 
+<p>Lo primero que debemos hacer es eliminar el archivo <strong>MainActivity.cs</strong> que se crea de forma automática al crear un proyecto de Xamarin Android.</p>
+
+<p>El siguiente paso es crear el archivo responsable de arrancar MvvmCross. Dentro del proyecto Android debemos crear el archivo Setup.cs</p>
+
+<img src="/Img/30.PNG"/>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Droid/Setup.cs">[Código aquí]</a></p>
+
+
+<p>El siguiente paso es agregar los siguientes paquetes nuget:</p>
+
+<ul>
+	<li>MvvmCross.Droid.Support.V7.RecyclerView, usaremos en los listados.</li>
+</ul>
+
+<img src="/Img/17.PNG"/>
+
+<ul>
+	<li>Xamarin.FFImageLoading, usaremos para trabajar con las imagenes.</li>
+</ul>
+
+<img src="/Img/18.PNG"/>
+
+<ul>
+	<li>NewtosoftJson - MvvmCross en android necesita de este paquete</li>
+</ul>
+
+<img src="/Img/15.PNG"/>
+
+
+
+<p>Una vez instalado todos los paquetes, debemos agregar como referencia <strong>Mono.android.Export</strong></p>
+
+<img src="/Img/16.PNG"/>
+
+
+<p> El siguiente paso es crear la vista, vamos a crear un carpeta con el nombre <strong>Views</strong> y agregaremos muestas vistas ahí dentro. Abajo captura con todas las vistas creadas.</p>
+
+<img src="/Img/31.PNG"/>
+
+
+<p>Para crear la vista hacemos clic sobre la carpeta Views y elegimos la opción agregar nuevo elemento.</p>
+
+<img src="/Img/32.PNG"/>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Droid/Views/HomeView.cs">[Código de la vista .cs]</a></p>
+
+
+<p>La vista va asociado a un archivo AXML que debemos crear, dentro de la carpeta Resources => layout debemos hacer clic con el 2 botón sobre la carpeta y debemos elegir la opción  agregar nuevo elemento.</p>
+
+<img src="/Img/33.PNG"/>
+
+
+<p>En nuestra vista va a contener 2 elementos principales, un elemento de lista y un progressBar para indicar sí el servicio está cargando. La lista hace referencia a un template que debemos crear.</p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Droid/Resources/layout/HomeView.axml">[Código de la vista AXML]</a></p>
+
+<p>Vamos ahora a crear el template de la lista, el proceso es el mismo que el anterior, dentro de la carpeta Resources => layout debemos hacer clic con el 2 botón sobre la carpeta y debemos elegir la opción  agregar nuevo elemento. </p>
+
+<img src="/Img/34.PNG"/>
+
+<p> En este template, vamos a pintar los valores que queremos pintar por cada ítem de la lista. En este caso he puesto la imagen y el título de la película. Fijate que estoy usando el plugin de la imagen que hemos instalado antes.</p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Droid/Resources/layout/ItemList.axml">[Código del TEMPLATE AXML]</a></p>
+
+
+<p>Ahora falta crear la vista del detalle, es muy similar a los pasos anteriores, se puede ver el código abajo.</p>
+
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Droid/Views/AboutView.cs">[Código vista About.cs]</a></p>
+
+<p><a  target="_blank" href="https://raw.githubusercontent.com/elbrinner/mvvmcross-6-beta-net-standard-ios-android-uwp/master/Classic/Classic.Droid/Resources/layout/AboutView.axml">[Código vista AboutView.axml]</a></p>
+
+
+
+
 <h2>Paso 6: Configurar iOS</h2>
 
 <p>Abrimos el AppDelegate, este es el punto de partida de la Aplicación en iOS, aqui controlamos el ciclo de vida de la Aplicación, el proposito es trabajar sin los famosos Storyboards y hacer una aplicacion mas escalable y con un mejor control del flujo</p>
